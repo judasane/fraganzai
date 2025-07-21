@@ -5,7 +5,8 @@
     "title_part2": "Decoded by AI",
     "description": "Where artificial intelligence meets artisanal perfumery to craft your uniquely personal fragrance.",
     "button_discover": "Discover Your Scent",
-    "button_how_it_works": "See How It Works"
+    "button_how_it_works": "See How It Works",
+    "aria_label_scroll_down": "Scroll down"
   },
   "cta": {
     "title_part1": "Your Unique Fragrance",
@@ -61,7 +62,7 @@
     },
     "step2": {
       "title": "Artisanal Formulation",
-      "description": "Master perfumers interpret the AI's data to create exclusive formulas with premium ingredients."
+      "description": "Master perfumists interpret the AI's data to create exclusive formulas with premium ingredients."
     },
     "step3": {
       "title": "Personalized Creation",

@@ -33,18 +33,18 @@ const Hero: React.FC<HeroProps> = ({ scrollToSection, openModal, scrollY }) => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-24">
           <Button size="lg" variant="primary" onClick={openModal}>
             <FlaskConical className="h-5 w-5 mr-3 group-hover:rotate-12 transition-transform" />
- {t('hero.button1')}            <ArrowRight className="h-5 w-5 ml-3 group-hover:translate-x-1 transition-transform" />
+ {t('hero.button_discover')}            <ArrowRight className="h-5 w-5 ml-3 group-hover:translate-x-1 transition-transform" />
           </Button>
           <Button size="lg" variant="outline" onClick={() => scrollToSection('proceso')}>
             <Play className="h-5 w-5 mr-3" />
- {t('hero.button2')}
+ {t('hero.button_how_it_works')}
           </Button>
  </div>
 
         <button
           onClick={() => scrollToSection('proceso')}
           className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce text-slate-500 dark:text-slate-400 hover:text-slate-700 dark:hover:text-slate-200 transition-colors"
-          aria-label="Scroll down"
+          aria-label={t('hero.aria_label_scroll_down')}
         >
           <ChevronDown className="h-6 w-6" />
         </button>
