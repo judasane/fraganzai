@@ -115,6 +115,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode, scrollToSecti
           <button
             onClick={toggleDarkMode}
             className="p-3 rounded-full bg-slate-100/50 dark:bg-slate-800/50 text-slate-600 dark:text-slate-400 hover:bg-slate-200/70 dark:hover:bg-slate-700/70 transition-all"
+          aria-label="toggle dark mode"
           >
             {darkMode ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
           </button>
