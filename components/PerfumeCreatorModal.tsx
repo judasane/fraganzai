@@ -67,12 +67,13 @@ const PerfumeCreatorModal: React.FC<PerfumeCreatorModalProps> = ({ isOpen, onClo
     <div 
       className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm animate-in fade-in"
       onClick={handleClose}
+      role="dialog"
     >
       <div 
         className="relative bg-slate-50 dark:bg-slate-900 rounded-3xl shadow-2xl w-[95%] max-w-2xl max-h-[90vh] overflow-y-auto p-8 border border-slate-200 dark:border-slate-700 animate-in fade-in zoom-in-95"
         onClick={e => e.stopPropagation()}
       >
-        <button onClick={handleClose} className="absolute top-4 right-4 p-2 text-slate-500 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-full transition-colors">
+        <button onClick={handleClose} className="absolute top-4 right-4 p-2 text-slate-500 dark:text-slate-400 hover:bg-slate-200 dark:hover:bg-slate-700 rounded-full transition-colors" aria-label="close">
           <X className="h-5 w-5" />
         </button>
 
