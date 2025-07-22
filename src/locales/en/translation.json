@@ -1,92 +1,11 @@
 {
-  "hero": {
-    "badge": "The Future of Perfumery",
-    "title": {
-      "part1": "Your Essence,",
-      "part2": "Decoded by AI"
-    },
-    "description": "Where artificial intelligence meets artisanal perfumery to craft your uniquely personal fragrance.",
-    "button_discover": "Discover Your Scent",
-    "button_how_it_works": "See How It Works",
-    "aria_label_scroll_down": "Scroll down"
-  },
-  "cta": {
-    "title_part1": "Your Unique Fragrance",
-    "title_part2": "Awaits",
-    "description": "Join the olfactory revolution where AI and masterful craftsmanship create the perfect fragrance for you.",
-    "button_create": "Create My Fragrance Now",
-    "satisfaction_guarantee": "100% Satisfaction Guarantee"
-  },
-  "testimonials": {
-    "title_part1": "Transformative",
-    "title_part2": "Experiences",
-    "description": "Discover how fraganz.ai has revolutionized the olfactory experience for our most discerning clients.",
-    "testimonial1": {
-      "title": "Creative Director",
-      "quote": "I never thought a fragrance could so perfectly capture my personality. It's as if they read my soul."
-    },
-    "testimonial2": {
-      "title": "Entrepreneur",
-      "quote": "The blend of technology and craftsmanship is extraordinary. My fragrance is unique and sophisticated."
-    },
-    "testimonial3": {
-      "title": "Architect",
-      "quote": "Every time I wear my fraganz.ai fragrance, I get compliments. It's truly exceptional."
-    }
-  },
-  "ingredients": {
-    "title_part1": "Exceptional",
-    "title_part2": "Ingredients",
-    "description": "We select the purest and rarest ingredients from around the world to create unparalleled luxury fragrances.",
-    "top_notes": {
-      "category": "Top Notes",
-      "name": "Radiant Opening",
-      "description": "Sicilian Bergamot, Amalfi Lemon, and Bulgarian Rose Petals for a bright, memorable opening."
-    },
-    "heart_notes": {
-      "category": "Heart Notes",
-      "name": "Aromatic Heart",
-      "description": "Jasmine from Grasse, Florentine Iris, and rare spices that define your fragrance's unique character."
-    },
-    "base_notes": {
-      "category": "Base Notes",
-      "name": "Profound Base",
-      "description": "Cambodian Oud, Mystical Sandalwood, and Ambergris for an unforgettable, long-lasting trail."
-    }
-  },
-  "process": {
-    "title_part1": "The Art of",
-    "title_part2": "Intelligent Perfumery",
-    "description": "We fuse centuries of artisanal mastery with cutting-edge algorithms to create fragrances that capture your unique essence.",
-    "step1": {
-      "title": "Personality Analysis",
-      "description": "Our AI analyzes your preferences, memories, and personality to identify your unique aromatic profile."
-    },
-    "step2": {
-      "title": "Artisanal Formulation",
-      "description": "Master perfumists interpret the AI's data to create exclusive formulas with premium ingredients."
-    },
-    "step3": {
-      "title": "Personalized Creation",
-      "description": "Each fragrance is one-of-a-kind, crafted specifically for you and your personal story."
-    }
-  },
-  "footer": {
-    "description": "Revolutionizing perfumery with artificial intelligence and traditional craftsmanship to create unique, personalized fragrances.",
-    "services_title": "Services",
-    "services": {
-      "personalized": "Personalized Fragrances",
-      "consulting": "Olfactory Consulting",
-      "workshops": "Perfumery Workshops",
-      "corporate": "Corporate Fragrances"
-    },
-    "contact_title": "Contact",
-    "contact": {
-      "email": "hello@fraganz.ai",
-      "phone": "+1 (555) 123-4567",
-      "barcelona": "Barcelona, Spain",
-      "paris": "Paris, France"
-    },
-    "copyright": "All rights reserved. Crafting unique fragrances with artificial intelligence."
-  }
+  "hero": { "badge": "The Future of Perfumery", "title": { "part1": "Your Essence,", "part2": "Decoded by AI" }, "description": "Where artificial intelligence meets artisanal perfumery to craft your uniquely personal fragrance.", "button_discover": "Discover Your Scent", "button_how_it_works": "See How It Works", "aria_label_scroll_down": "Scroll down" },
+  "cta": { "title_part1": "Your Unique Fragrance", "title_part2": "Awaits", "description": "Join the olfactory revolution where AI and masterful craftsmanship create the perfect fragrance for you.", "button_create": "Create My Fragrance Now", "button_quiz": "Take the Quiz", "satisfaction_guarantee": "100% Satisfaction Guarantee" },
+  "testimonials": { "title_part1": "Transformative", "title_part2": "Experiences", "description": "Discover how fraganz.ai has revolutionized the olfactory experience for our most discerning clients.", "quotes": { "quote1": "I never thought a fragrance could so perfectly capture my personality. It's as if they read my soul.", "quote2": "The blend of technology and craftsmanship is extraordinary. My fragrance is unique and sophisticated.", "quote3": "Every time I wear my fraganz.ai fragrance, I get compliments. It's truly exceptional." }, "testimonial1": { "name": "Maria", "title": "Entrepreneur" }, "testimonial2": { "name": "Alex", "title": "Creative Director" }, "testimonial3": { "name": "Samantha", "title": "Copywriter" } },
+  "ingredients": { "title_part1": "Exceptional", "title_part2": "Ingredients", "description": "We select the purest and rarest ingredients from around the world to create unparalleled luxury fragrances.", "notes": { "top": "Top Notes", "heart": "Heart Notes", "base": "Base Notes" }, "items": { "item1": { "name": "Radiant Opening", "description": "Sicilian Bergamot, Amalfi Lemon, and Bulgarian Rose Petals for a bright, memorable opening." }, "item2": { "name": "Aromatic Heart", "description": "Jasmine from Grasse, Florentine Iris, and rare spices that define your fragrance's unique character." }, "item3": { "name": "Profound Base", "description": "Cambodian Oud, Mystical Sandalwood, and Ambergris for an unforgettable, long-lasting trail." } } },
+  "process": { "title_part1": "The Art of", "title_part2": "Intelligent Perfumery", "description": "We fuse centuries of artisanal mastery with cutting-edge algorithms to create fragrances that capture your unique essence.", "steps": { "step1": { "title": "Personality Analysis", "description": "Our AI analyzes your preferences, memories, and personality to identify your unique aromatic profile." }, "step2": { "title": "Artisanal Formulation", "description": "Master perfumists interpret the AI's data to create exclusive formulas with premium ingredients." }, "step3": { "title": "Personalized Creation", "description": "Each fragrance is one-of-a-kind, crafted specifically for you and your personal story." } } },
+  "footer": { "description": "Revolutionizing perfumery with artificial intelligence and traditional craftsmanship to create unique, personalized fragrances.", "services_title": "Services", "services": { "personalized": "Personalized Fragrances", "consulting": "Olfactory Consulting", "workshops": "Perfumery Workshops", "corporate": "Corporate Fragrances" }, "contact_title": "Contact", "contact": { "email": "hello@fraganz.ai", "phone": "+1 (555) 123-4567", "barcelona": "Barcelona, Spain", "paris": "Paris, France" }, "copyright": "All rights reserved. Crafting unique fragrances with artificial intelligence." },
+  "quiz": { "questions": [ { "question": "What's a cherished memory you associate with a specific scent?", "placeholder": "e.g., 'Baking cookies with my grandmother, the smell of vanilla and cinnamon filling the kitchen...'", "key": "memory" }, { "question": "How do you want to feel when you wear this perfume?", "placeholder": "e.g., 'Confident and empowered, ready to take on the world.'", "key": "feeling" }, { "question": "Describe your personal style in a few words.", "placeholder": "e.g., 'Classic, elegant, with a touch of modern.'", "key": "style" }, { "question": "What's your favorite time of day?", "placeholder": "e.g., 'Sunrise, when the world is quiet and full of possibility.'", "key": "time_of_day" }, { "question": "Choose a color that represents you.", "placeholder": "e.g., 'Deep blue, like the ocean.'", "key": "color" }, { "question": "What's your ideal vacation?", "placeholder": "e.g., 'A cozy cabin in the mountains, surrounded by pine trees.'", "key": "vacation" }, { "question": "What's a movie or book character you admire?", "placeholder": "e.g., 'Hermione Granger, for her intelligence and bravery.'", "key": "character" }, { "question": "What's your favorite food or drink?", "placeholder": "e.g., 'A warm cup of chai tea on a rainy day.'", "key": "food_drink" }, { "question": "What's your favorite season?", "placeholder": "e.g., 'Autumn, for the crisp air and changing leaves.'", "key": "season" }, { "question": "Is there anything else you'd like to share?", "placeholder": "e.g., 'I'm allergic to synthetic fragrances.'", "key": "extra" } ], "step": "Step {{current}} of {{total}}", "next": "Next", "generate": "Generate My Scent", "crafting": "Crafting..." },
+  "recipe": { "title": "Your Personal Recipe", "description": "Based on your answers, here is a unique essential oil recipe to create your scent. Mix the following drops into a carrier oil of your choice.", "drops": "{{count}} drops", "total_drops": "Total: {{count}} drops" },
+  "oils": { "bergamot": "Bergamot", "lemon": "Lemon", "neroli": "Neroli", "rose": "Rose", "jasmine": "Jasmine", "ylangYlang": "Ylang Ylang", "sandalwood": "Sandalwood", "cedarwood": "Cedarwood", "frankincense": "Frankincense", "vetiver": "Vetiver", "patchouli": "Patchouli", "lavender": "Lavender", "chamomile": "Chamomile", "peppermint": "Peppermint", "eucalyptus": "Eucalyptus", "teaTree": "Tea Tree", "rosemary": "Rosemary", "clarySage": "Clary Sage", "geranium": "Geranium", "ginger": "Ginger" }
 }
