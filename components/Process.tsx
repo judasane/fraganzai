@@ -11,20 +11,20 @@ interface ProcessProps {
 const steps = [
   {
     id: 1,
-    titleKey: 'process.steps.step1.title',
-    descriptionKey: 'process.steps.step1.description',
+    titleKey: 'process.step1.title',
+    descriptionKey: 'process.step1.description',
     icon: Brain,
   },
   {
     id: 2,
-    titleKey: 'process.steps.step2.title',
-    descriptionKey: 'process.steps.step2.description',
+    titleKey: 'process.step2.title',
+    descriptionKey: 'process.step2.description',
     icon: Beaker,
   },
   {
     id: 3,
-    titleKey: 'process.steps.step3.title',
-    descriptionKey: 'process.steps.step3.description',
+    titleKey: 'process.step3.title',
+    descriptionKey: 'process.step3.description',
     icon: Sparkles,
   },
 ];

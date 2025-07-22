@@ -1,6 +1,11 @@
 
 import React from 'react';
 
+export interface Recipe {
+  essentialOils: Record<string, number>;
+  totalDrops: number;
+}
+
 export interface FragranceProfile {
   fragranceName: string;
   personalityTraits: string[];
@@ -8,6 +13,7 @@ export interface FragranceProfile {
   middleNotes: string[];
   baseNotes: string[];
   story: string;
+  recipe: Recipe;
 }
 
 export interface Testimonial {
