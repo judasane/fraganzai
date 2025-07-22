@@ -68,5 +68,23 @@
       "title": "Personalized Creation",
       "description": "Each fragrance is one-of-a-kind, crafted specifically for you and your personal story."
     }
+  },
+  "footer": {
+    "description": "Revolutionizing perfumery with artificial intelligence and traditional craftsmanship to create unique, personalized fragrances.",
+    "services_title": "Services",
+    "services": {
+      "personalized": "Personalized Fragrances",
+      "consulting": "Olfactory Consulting",
+      "workshops": "Perfumery Workshops",
+      "corporate": "Corporate Fragrances"
+    },
+    "contact_title": "Contact",
+    "contact": {
+      "email": "hello@fraganz.ai",
+      "phone": "+1 (555) 123-4567",
+      "barcelona": "Barcelona, Spain",
+      "paris": "Paris, France"
+    },
+    "copyright": "All rights reserved. Crafting unique fragrances with artificial intelligence."
   }
 }

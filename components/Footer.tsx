@@ -1,11 +1,28 @@
 
 import React from 'react';
 import { Sparkles, Heart, Users, Zap } from 'lucide-react';
+import { useTranslation } from 'react-i18next'; // Import useTranslation
 
 const Footer: React.FC = () => {
+  const { t } = useTranslation(); // Use the hook
+
   const socialLinks = [{ icon: Heart }, { icon: Users }, { icon: Zap }];
-  const serviceLinks = ['Personalized Fragrances', 'Olfactory Consulting', 'Perfumery Workshops', 'Corporate Fragrances'];
-  const contactInfo = ['hello@fraganz.ai', '+1 (555) 123-4567', 'Barcelona, Spain', 'Paris, France'];
+  
+  // Define service links with translation keys
+  const serviceLinks = [
+    { key: 'footer.services.personalized', href: '#' },
+    { key: 'footer.services.consulting', href: '#' },
+    { key: 'footer.services.workshops', href: '#' },
+    { key: 'footer.services.corporate', href: '#' },
+  ];
+  
+  // Define contact info with translation keys
+  const contactInfo = [
+    { key: 'footer.contact.email', text: 'hello@fraganz.ai' }, // Email and phone might be hardcoded text depending on requirements
+    { key: 'footer.contact.phone', text: '+1 (555) 123-4567' },
+    { key: 'footer.contact.barcelona', text: 'Barcelona, Spain' },
+    { key: 'footer.contact.paris', text: 'Paris, France' },
+  ];
 
   return (
     <footer className="p-4">
@@ -16,10 +33,10 @@ const Footer: React.FC = () => {
               <div className="w-10 h-10 bg-gradient-to-br from-slate-700 to-slate-900 dark:from-slate-200 dark:to-slate-400 rounded-xl flex items-center justify-center shadow-md">
                 <Sparkles className="h-5 w-5 text-white dark:text-slate-900" />
               </div>
-              <span className="text-2xl font-light text-slate-900 dark:text-slate-100">fraganz.ai</span>
+              <span className="text-2xl font-light text-slate-900 dark:text-slate-100">fraganz.ai</span>{/* Logo text might not be translated */}
             </div>
             <p className="text-slate-600 dark:text-slate-400 mb-8 max-w-md leading-relaxed font-light">
-              Revolutionizing perfumery with artificial intelligence and traditional craftsmanship to create unique, personalized fragrances.
+              {t('footer.description')}{/* Use translated description */}
             </p>
             <div className="flex space-x-3">
               {socialLinks.map((Link, index) => (
@@ -31,26 +48,26 @@ const Footer: React.FC = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-medium text-slate-900 dark:text-slate-100 mb-6">Services</h3>
+            <h3 className="text-lg font-medium text-slate-900 dark:text-slate-100 mb-6">{t('footer.services_title')}</h3>{/* Use translated services title */}
             <ul className="space-y-3">
               {serviceLinks.map(link => (
-                <li key={link}>
-                  <a href="#" className="text-slate-600 dark:text-slate-400 font-light hover:text-slate-900 dark:hover:text-slate-100 transition-colors">{link}</a>
+                <li key={link.key}>
+                  <a href={link.href} className="text-slate-600 dark:text-slate-400 font-light hover:text-slate-900 dark:hover:text-slate-100 transition-colors">{t(link.key)}</a>{/* Use translated service link text */}
                 </li>
               ))}
             </ul>
           </div>
 
           <div>
-            <h3 className="text-lg font-medium text-slate-900 dark:text-slate-100 mb-6">Contact</h3>
+            <h3 className="text-lg font-medium text-slate-900 dark:text-slate-100 mb-6">{t('footer.contact_title')}</h3>{/* Use translated contact title */}
             <ul className="space-y-3 text-slate-600 dark:text-slate-400 font-light">
-              {contactInfo.map(info => <li key={info}>{info}</li>)}
+              {contactInfo.map(info => <li key={info.key}>{t(info.key)}</li>)}{/* Use translated contact info */}
             </ul>
           </div>
         </div>
 
         <div className="border-t border-slate-200/50 dark:border-slate-700/50 mt-12 pt-8 text-center text-slate-600 dark:text-slate-400 font-light text-sm">
-          <p>&copy; {new Date().getFullYear()} fraganz.ai. All rights reserved. Crafting unique fragrances with artificial intelligence.</p>
+          <p>&copy; {new Date().getFullYear()} fraganz.ai. {t('footer.copyright')}</p>{/* Use translated copyright text */}
         </div>
       </div>
     </footer>
