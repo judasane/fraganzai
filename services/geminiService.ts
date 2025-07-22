@@ -36,14 +36,53 @@ const fragranceSchema = {
     story: {
       type: Type.STRING,
       description: "A short, poetic story or description (2-3 sentences) that captures the essence of the fragrance and connects with the user's input."
+    },
+    recipe: {
+      type: Type.OBJECT,
+      description: "A recipe for the perfume based on a total of 20 drops of essential oils.",
+      properties: {
+        essentialOils: {
+          type: Type.OBJECT,
+          description: "A dictionary of essential oils and their corresponding drop counts.",
+          properties: {
+            bergamot: { type: Type.NUMBER },
+            lemon: { type: Type.NUMBER },
+            neroli: { type: Type.NUMBER },
+            rose: { type: Type.NUMBER },
+            jasmine: { type: Type.NUMBER },
+            ylangYlang: { type: Type.NUMBER },
+            sandalwood: { type: Type.NUMBER },
+            cedarwood: { type: Type.NUMBER },
+            frankincense: { type: Type.NUMBER },
+            vetiver: { type: Type.NUMBER },
+            patchouli: { type: Type.NUMBER },
+            lavender: { type: Type.NUMBER },
+            chamomile: { type: Type.NUMBER },
+            peppermint: { type: Type.NUMBER },
+            eucalyptus: { type: Type.NUMBER },
+            teaTree: { type: Type.NUMBER },
+            rosemary: { type: Type.NUMBER },
+            clarySage: { type: Type.NUMBER },
+            geranium: { type: Type.NUMBER },
+            ginger: { type: Type.NUMBER },
+          }
+        },
+        totalDrops: {
+          type: Type.NUMBER,
+          description: "The total number of drops in the recipe, which should be 20."
+        }
+      },
+      required: ["essentialOils", "totalDrops"]
     }
   },
-  required: ["fragranceName", "personalityTraits", "topNotes", "middleNotes", "baseNotes", "story"]
+  required: ["fragranceName", "personalityTraits", "topNotes", "middleNotes", "baseNotes", "story", "recipe"]
 };
 
-export const generateFragranceProfile = async (userInput: string): Promise<FragranceProfile> => {
+export const generateFragranceProfile = async (userInput: string | Record<string, string>): Promise<FragranceProfile> => {
   try {
-    const prompt = `Based on the following user description, create a unique perfume profile. Analyze the text for personality, mood, and preferences to define the fragrance notes and its story. User description: "${userInput}"`;
+    const prompt = typeof userInput === 'string'
+      ? `Based on the following user description, create a unique perfume profile. Analyze the text for personality, mood, and preferences to define the fragrance notes and its story. User description: "${userInput}"`
+      : `Based on the following quiz answers, create a unique perfume profile. Analyze the answers for personality, mood, and preferences to define the fragrance notes, its story, and a recipe. Quiz answers: ${JSON.stringify(userInput)}`;
 
     const response: GenerateContentResponse = await ai.models.generateContent({
       model: 'gemini-2.5-flash',

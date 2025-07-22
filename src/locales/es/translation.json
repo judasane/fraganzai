@@ -15,6 +15,7 @@
     "title_part2": "Te Espera",
     "description": "Únete a la revolución olfativa donde la IA y la maestría artesanal crean la fragancia perfecta para ti.",
     "button_create": "Crea Mi Fragancia Ahora",
+    "button_quiz": "Haz el Test",
     "satisfaction_guarantee": "100% Garantía de Satisfacción"
   },
   "testimonials": {
@@ -102,5 +103,91 @@
       "paris": "París, Francia"
     },
     "copyright": "Todos los derechos reservados. Creando fragancias únicas con inteligencia artificial."
+  },
+  "quiz": {
+    "questions": [
+      {
+        "question": "¿Cuál es un recuerdo querido que asocias con un aroma específico?",
+        "placeholder": "p. ej., 'Hacer galletas con mi abuela, el olor a vainilla y canela llenando la cocina...'",
+        "key": "memory"
+      },
+      {
+        "question": "¿Cómo quieres sentirte cuando uses este perfume?",
+        "placeholder": "p. ej., 'Confiada y empoderada, lista para conquistar el mundo.'",
+        "key": "feeling"
+      },
+      {
+        "question": "Describe tu estilo personal en pocas palabras.",
+        "placeholder": "p. ej., 'Clásico, elegante, con un toque moderno.'",
+        "key": "style"
+      },
+      {
+        "question": "¿Cuál es tu momento favorito del día?",
+        "placeholder": "p. ej., 'El amanecer, cuando el mundo está en calma y lleno de posibilidades.'",
+        "key": "time_of_day"
+      },
+      {
+        "question": "Elige un color que te represente.",
+        "placeholder": "p. ej., 'Azul profundo, como el océano.'",
+        "key": "color"
+      },
+      {
+        "question": "¿Cuáles son tus vacaciones ideales?",
+        "placeholder": "p. ej., 'Una cabaña acogedora en las montañas, rodeada de pinos.'",
+        "key": "vacation"
+      },
+      {
+        "question": "¿Qué personaje de película o libro admiras?",
+        "placeholder": "p. ej., 'Hermione Granger, por su inteligencia y valentía.'",
+        "key": "character"
+      },
+      {
+        "question": "¿Cuál es tu comida o bebida favorita?",
+        "placeholder": "p. ej., 'Una taza de té chai caliente en un día lluvioso.'",
+        "key": "food_drink"
+      },
+      {
+        "question": "¿Cuál es tu estación del año favorita?",
+        "placeholder": "p. ej., 'Otoño, por el aire fresco y las hojas cambiantes.'",
+        "key": "season"
+      },
+      {
+        "question": "¿Hay algo más que te gustaría compartir?",
+        "placeholder": "p. ej., 'Soy alérgica a las fragancias sintéticas.'",
+        "key": "extra"
+      }
+    ],
+    "step": "Paso {{current}} de {{total}}",
+    "next": "Siguiente",
+    "generate": "Generar Mi Aroma",
+    "crafting": "Creando..."
+  },
+  "recipe": {
+    "title": "Tu Receta Personal",
+    "description": "Basado en tus respuestas, aquí tienes una receta única de aceites esenciales para crear tu aroma. Mezcla las siguientes gotas en un aceite portador de tu elección.",
+    "drops": "{{count}} gotas",
+    "total_drops": "Total: {{count}} gotas"
+  },
+  "oils": {
+    "bergamot": "Bergamota",
+    "lemon": "Limón",
+    "neroli": "Neroli",
+    "rose": "Rosa",
+    "jasmine": "Jazmín",
+    "ylangYlang": "Ylang Ylang",
+    "sandalwood": "Sándalo",
+    "cedarwood": "Madera de Cedro",
+    "frankincense": "Incienso",
+    "vetiver": "Vetiver",
+    "patchouli": "Pachulí",
+    "lavender": "Lavanda",
+    "chamomile": "Manzanilla",
+    "peppermint": "Menta",
+    "eucalyptus": "Eucalipto",
+    "teaTree": "Árbol de Té",
+    "rosemary": "Romero",
+    "clarySage": "Salvia Sclarea",
+    "geranium": "Geranio",
+    "ginger": "Jengibre"
   }
 }

@@ -33,6 +33,11 @@ const CTA: React.FC<CTAProps> = ({ openModal, scrollY }) => {
               {t('cta.button_create')}{/* Use translated button text (corrected key) */}
               <ArrowRight className="h-5 w-5 ml-3 group-hover:translate-x-1 transition-transform" />
             </Button>
+            <Button size="lg" variant="secondary" onClick={openModal}>
+              <Sparkles className="h-5 w-5 mr-3 group-hover:rotate-12 transition-transform" />
+              {t('cta.button_quiz')}
+              <ArrowRight className="h-5 w-5 ml-3 group-hover:translate-x-1 transition-transform" />
+            </Button>
           </div>
           <p className="text-slate-400 text-sm font-light flex items-center justify-center gap-2">
             <Heart className="h-3 w-3" />

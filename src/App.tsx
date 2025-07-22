@@ -41,7 +41,13 @@ function App() {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
   }, []);
 
-  const openModal = useCallback(() => setIsModalOpen(true), []);
+  const [modalView, setModalView] = useState<'text' | 'quiz'>('text');
+
+  const openModal = useCallback((view: 'text' | 'quiz' = 'text') => {
+    setModalView(view);
+    setIsModalOpen(true);
+  }, []);
+
   const closeModal = useCallback(() => setIsModalOpen(false), []);
 
   return (
@@ -71,7 +77,7 @@ function App() {
         <Footer />
       </div>
 
-      <PerfumeCreatorModal isOpen={isModalOpen} onClose={closeModal} />
+      <PerfumeCreatorModal isOpen={isModalOpen} onClose={closeModal} initialView={modalView} />
     </div>
   );
 }
