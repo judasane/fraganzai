@@ -1,15 +1,15 @@
 
-import React, { useState, useEffect, useCallback } from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Process from './components/Process';
-import Ingredients from './components/Ingredients';
-import Testimonials from './components/Testimonials';
-import CTA from './components/CTA';
-import Footer from './components/Footer';
-import PerfumeCreatorModal from './components/PerfumeCreatorModal';
+import { useState, useEffect, useCallback } from 'react';
+import Header from '../components/Header';
+import Hero from '../components/Hero';
+import Process from '../components/Process';
+import Ingredients from '../components/Ingredients';
+import Testimonials from '../components/Testimonials';
+import CTA from '../components/CTA';
+import Footer from '../components/Footer';
+import PerfumeCreatorModal from '../components/PerfumeCreatorModal';
 
-export function App() {
+function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [scrollY, setScrollY] = useState(0);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -75,3 +75,5 @@ export function App() {
     </div>
   );
 }
+
+export default App;
