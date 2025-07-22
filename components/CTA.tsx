@@ -30,13 +30,13 @@ const CTA: React.FC<CTAProps> = ({ openModal, scrollY }) => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Button size="lg" variant="golden" onClick={openModal}>
               <Sparkles className="h-5 w-5 mr-3 group-hover:rotate-12 transition-transform" />
-              {t('cta.button')}{/* Use translated button text */}
+              {t('cta.button_create')}{/* Use translated button text (corrected key) */}
               <ArrowRight className="h-5 w-5 ml-3 group-hover:translate-x-1 transition-transform" />
             </Button>
           </div>
           <p className="text-slate-400 text-sm font-light flex items-center justify-center gap-2">
             <Heart className="h-3 w-3" />
-            {t('cta.guarantee')}{/* Use translated guarantee text */}
+            {t('cta.satisfaction_guarantee')}{/* Use translated guarantee text (corrected key) */}
           </p>
         </div>
       </div>

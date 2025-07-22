@@ -8,15 +8,15 @@ interface TestimonialsProps {
   scrollY: number;
 }
 
-// Define testimonials with translation keys
+// Define testimonials with translation keys matching JSON structure
 const testimonialData = [
   {
     id: 1,
     nameKey: 'testimonials.testimonial1.name',
     titleKey: 'testimonials.testimonial1.title',
-    avatar: 'M', // Avatar might not be translatable, depending on requirements
+    avatar: 'M', 
     rating: 5,
-    quoteKey: 'testimonials.testimonial1.quote',
+    quoteKey: 'testimonials.quotes.quote1', // Corrected key
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ const testimonialData = [
     titleKey: 'testimonials.testimonial2.title',
     avatar: 'A',
     rating: 5,
-    quoteKey: 'testimonials.testimonial2.quote',
+    quoteKey: 'testimonials.quotes.quote2', // Corrected key
   },
   {
     id: 3,
@@ -32,7 +32,7 @@ const testimonialData = [
     titleKey: 'testimonials.testimonial3.title',
     avatar: 'S',
     rating: 5,
-    quoteKey: 'testimonials.testimonial3.quote',
+    quoteKey: 'testimonials.quotes.quote3', // Corrected key
   },
 ];
 
@@ -51,6 +51,7 @@ const TestimonialCard: React.FC<{ testimonial: { id: number; nameKey: string; ti
       </p>
       <div className="flex items-center">
         <div className="w-12 h-12 bg-gradient-to-br from-slate-700 to-slate-900 dark:from-slate-200 dark:to-slate-400 rounded-full flex items-center justify-center text-white dark:text-slate-900 font-light text-lg shadow-md">
+          {/* Avatar might not be translatable, depending on requirements */}
           {testimonial.avatar}
         </div>
         <div className="ml-4">

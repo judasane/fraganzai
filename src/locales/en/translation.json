@@ -1,8 +1,10 @@
 {
   "hero": {
     "badge": "The Future of Perfumery",
-    "title_part1": "Your Essence,",
-    "title_part2": "Decoded by AI",
+    "title": {
+      "part1": "Your Essence,",
+      "part2": "Decoded by AI"
+    },
     "description": "Where artificial intelligence meets artisanal perfumery to craft your uniquely personal fragrance.",
     "button_discover": "Discover Your Scent",
     "button_how_it_works": "See How It Works",
