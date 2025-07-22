@@ -7,7 +7,7 @@ import { useTranslation } from 'react-i18next';
 
 interface HeroProps {
   scrollToSection: (id: string) => void;
-  openModal: () => void;
+  openModal: (view: 'text' | 'quiz') => void;
   scrollY: number;
 }
 

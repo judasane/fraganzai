@@ -15,6 +15,7 @@
     "title_part2": "Awaits",
     "description": "Join the olfactory revolution where AI and masterful craftsmanship create the perfect fragrance for you.",
     "button_create": "Create My Fragrance Now",
+    "button_quiz": "Take the Quiz",
     "satisfaction_guarantee": "100% Satisfaction Guarantee"
   },
   "testimonials": {
@@ -88,5 +89,91 @@
       "paris": "Paris, France"
     },
     "copyright": "All rights reserved. Crafting unique fragrances with artificial intelligence."
+  },
+  "quiz": {
+    "questions": [
+      {
+        "question": "What's a cherished memory you associate with a specific scent?",
+        "placeholder": "e.g., 'Baking cookies with my grandmother, the smell of vanilla and cinnamon filling the kitchen...'",
+        "key": "memory"
+      },
+      {
+        "question": "How do you want to feel when you wear this perfume?",
+        "placeholder": "e.g., 'Confident and empowered, ready to take on the world.'",
+        "key": "feeling"
+      },
+      {
+        "question": "Describe your personal style in a few words.",
+        "placeholder": "e.g., 'Classic, elegant, with a touch of modern.'",
+        "key": "style"
+      },
+      {
+        "question": "What's your favorite time of day?",
+        "placeholder": "e.g., 'Sunrise, when the world is quiet and full of possibility.'",
+        "key": "time_of_day"
+      },
+      {
+        "question": "Choose a color that represents you.",
+        "placeholder": "e.g., 'Deep blue, like the ocean.'",
+        "key": "color"
+      },
+      {
+        "question": "What's your ideal vacation?",
+        "placeholder": "e.g., 'A cozy cabin in the mountains, surrounded by pine trees.'",
+        "key": "vacation"
+      },
+      {
+        "question": "What's a movie or book character you admire?",
+        "placeholder": "e.g., 'Hermione Granger, for her intelligence and bravery.'",
+        "key": "character"
+      },
+      {
+        "question": "What's your favorite food or drink?",
+        "placeholder": "e.g., 'A warm cup of chai tea on a rainy day.'",
+        "key": "food_drink"
+      },
+      {
+        "question": "What's your favorite season?",
+        "placeholder": "e.g., 'Autumn, for the crisp air and changing leaves.'",
+        "key": "season"
+      },
+      {
+        "question": "Is there anything else you'd like to share?",
+        "placeholder": "e.g., 'I'm allergic to synthetic fragrances.'",
+        "key": "extra"
+      }
+    ],
+    "step": "Step {{current}} of {{total}}",
+    "next": "Next",
+    "generate": "Generate My Scent",
+    "crafting": "Crafting..."
+  },
+  "recipe": {
+    "title": "Your Personal Recipe",
+    "description": "Based on your answers, here is a unique essential oil recipe to create your scent. Mix the following drops into a carrier oil of your choice.",
+    "drops": "{{count}} drops",
+    "total_drops": "Total: {{count}} drops"
+  },
+  "oils": {
+    "bergamot": "Bergamot",
+    "lemon": "Lemon",
+    "neroli": "Neroli",
+    "rose": "Rose",
+    "jasmine": "Jasmine",
+    "ylangYlang": "Ylang Ylang",
+    "sandalwood": "Sandalwood",
+    "cedarwood": "Cedarwood",
+    "frankincense": "Frankincense",
+    "vetiver": "Vetiver",
+    "patchouli": "Patchouli",
+    "lavender": "Lavender",
+    "chamomile": "Chamomile",
+    "peppermint": "Peppermint",
+    "eucalyptus": "Eucalyptus",
+    "teaTree": "Tea Tree",
+    "rosemary": "Rosemary",
+    "clarySage": "Clary Sage",
+    "geranium": "Geranium",
+    "ginger": "Ginger"
   }
 }
