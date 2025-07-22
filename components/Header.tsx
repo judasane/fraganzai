@@ -1,7 +1,8 @@
 
-import React, { useState, useEffect } from 'react';
-import { Sparkles, Sun, Moon } from 'lucide-react';
+import React, { useState, useEffect, useRef } from 'react';
+import { Sparkles, Sun, Moon, Globe } from 'lucide-react'; // Import Globe icon
 import Button from './ui/Button';
+import { useTranslation } from 'react-i18next';
 
 interface HeaderProps {
   darkMode: boolean;
@@ -10,7 +11,11 @@ interface HeaderProps {
 }
 
 const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode, scrollToSection }) => {
+  const { i18n, t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
+
+  const languageDropdownRef = useRef<HTMLDivElement>(null); // Ref for the dropdown container
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,17 +25,39 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode, scrollToSecti
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Close dropdown when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (languageDropdownRef.current && !languageDropdownRef.current.contains(event.target as Node)) {
+        setIsLanguageDropdownOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [languageDropdownRef]);
+
+  const handleLanguageChange = (lang: string) => {
+    i18n.changeLanguage(lang);
+    setIsLanguageDropdownOpen(false);
+  };
+
+  const toggleLanguageDropdown = () => {
+    setIsLanguageDropdownOpen(prev => !prev);
+  };
+
   const navLinks = [
-    { id: 'proceso', label: 'Process' },
-    { id: 'ingredientes', label: 'Ingredients' },
-    { id: 'testimonios', label: 'Testimonials' },
+    { id: 'proceso', label: t('process.title_part1') },
+    { id: 'ingredientes', label: t('ingredients.title_part1') },
+    { id: 'testimonios', label: t('testimonials.title_part1') },
   ];
 
   return (
     <header className={`fixed top-4 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-4xl transition-all duration-300`}>
       <div className={`flex items-center justify-between p-2 rounded-full transition-all duration-300 backdrop-blur-xl border ${
-        isScrolled 
-        ? 'bg-white/70 dark:bg-slate-900/70 border-slate-200/80 dark:border-slate-700/80 shadow-lg' 
+        isScrolled
+        ? 'bg-white/70 dark:bg-slate-900/70 border-slate-200/80 dark:border-slate-700/80 shadow-lg'
         : 'bg-white/30 dark:bg-slate-900/30 border-transparent'
       }`}>
         <div className="flex items-center space-x-2 cursor-pointer" onClick={() => scrollToSection('hero')}>
@@ -55,6 +82,36 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode, scrollToSecti
         </nav>
 
         <div className="flex items-center space-x-2">
+          {/* Language Selector */}
+          <div className="relative" ref={languageDropdownRef}>
+            <button
+              onClick={toggleLanguageDropdown}
+              className="p-3 rounded-full bg-slate-100/50 dark:bg-slate-800/50 text-slate-600 dark:text-slate-400 hover:bg-slate-200/70 dark:hover:bg-slate-700/70 transition-all"
+              aria-label="Change language"
+              aria-haspopup="true"
+              aria-expanded={isLanguageDropdownOpen}
+            >
+              <Globe className="h-4 w-4" />
+            </button>
+
+            {isLanguageDropdownOpen && (
+              <div className="absolute top-full mt-2 w-32 bg-white/70 dark:bg-slate-900/70 rounded-lg shadow-lg backdrop-blur-xl border border-slate-200/80 dark:border-slate-700/80 overflow-hidden right-0">
+                <button
+                  onClick={() => handleLanguageChange('es')}
+                  className="block w-full text-left px-4 py-2 text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-200/70 dark:hover:bg-slate-700/70 transition-colors"
+                >
+                  Español
+                </button>
+                <button
+                  onClick={() => handleLanguageChange('en')}
+                  className="block w-full text-left px-4 py-2 text-sm text-slate-600 dark:text-slate-400 hover:bg-slate-200/70 dark:hover:bg-slate-700/70 transition-colors"
+                >
+                  English
+                </button>
+              </div>
+            )}
+          </div>
+
           <button
             onClick={toggleDarkMode}
             className="p-3 rounded-full bg-slate-100/50 dark:bg-slate-800/50 text-slate-600 dark:text-slate-400 hover:bg-slate-200/70 dark:hover:bg-slate-700/70 transition-all"
@@ -62,7 +119,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode, scrollToSecti
             {darkMode ? <Sun className="h-4 w-4" /> : <Moon className="h-4 w-4" />}
           </button>
           <Button variant="primary" size="sm" onClick={() => scrollToSection('cta')}>
-            Begin
+            {t('cta.button_create')}
           </Button>
         </div>
       </div>

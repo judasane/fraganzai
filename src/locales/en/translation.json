@@ -14,8 +14,8 @@
     "title_part1": "Your Unique Fragrance",
     "title_part2": "Awaits",
     "description": "Join the olfactory revolution where AI and masterful craftsmanship create the perfect fragrance for you.",
-    "button": "Create My Fragrance Now",
-    "guarantee": "100% Satisfaction Guarantee"
+    "button_create": "Create My Fragrance Now",
+    "satisfaction_guarantee": "100% Satisfaction Guarantee"
   },
   "testimonials": {
     "title_part1": "Transformative",
