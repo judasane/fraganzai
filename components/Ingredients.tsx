@@ -1,52 +1,57 @@
 import React from 'react';
 import { Leaf, Droplets, FlaskConical } from 'lucide-react';
-import type { Ingredient } from '../types';
 import IngredientsIllustration from './illustrations/IngredientsIllustration';
+import { useTranslation } from 'react-i18next'; // Import useTranslation
 
 interface IngredientsProps {
   scrollY: number;
 }
 
-const ingredients: Ingredient[] = [
+// Define ingredients with translation keys
+const ingredients = [
   {
     id: 1,
-    category: 'Top Notes',
-    name: 'Radiant Opening',
-    description: 'Sicilian Bergamot, Amalfi Lemon, and Bulgarian Rose Petals for a bright, memorable opening.',
+    categoryKey: 'ingredients.notes.top',
+    nameKey: 'ingredients.items.item1.name',
+    descriptionKey: 'ingredients.items.item1.description',
     icon: Leaf,
   },
   {
     id: 2,
-    category: 'Heart Notes',
-    name: 'Aromatic Heart',
-    description: 'Jasmine from Grasse, Florentine Iris, and rare spices that define your fragrance\'s unique character.',
+    categoryKey: 'ingredients.notes.heart',
+    nameKey: 'ingredients.items.item2.name',
+    descriptionKey: 'ingredients.items.item2.description',
     icon: Droplets,
   },
   {
     id: 3,
-    category: 'Base Notes',
-    name: 'Profound Base',
-    description: 'Cambodian Oud, Mystical Sandalwood, and Ambergris for an unforgettable, long-lasting trail.',
+    categoryKey: 'ingredients.notes.base',
+    nameKey: 'ingredients.items.item3.name',
+    descriptionKey: 'ingredients.items.item3.description',
     icon: FlaskConical,
   },
 ];
 
-const IngredientCard: React.FC<{ item: Ingredient }> = ({ item }) => (
+const IngredientCard: React.FC<{ item: { id: number; categoryKey: string; nameKey: string; descriptionKey: string; icon: any } }> = ({ item }) => {
+  const { t } = useTranslation(); // Use the hook in the card component
+  return (
   <div className="group h-full">
     <div className="h-full bg-black/30 p-8 rounded-3xl backdrop-blur-lg border border-white/10 transition-all duration-500 hover:bg-black/50 hover:shadow-2xl hover:scale-105 hover:-translate-y-2">
       <div className="flex items-center justify-between mb-6">
         <div className="bg-gradient-to-br from-emerald-500 to-green-600 p-3 rounded-xl shadow-lg">
           <item.icon className="h-5 w-5 text-white" />
         </div>
-        <span className="text-slate-400 font-light text-sm">{item.category}</span>
+        <span className="text-slate-400 font-light text-sm">{t(item.categoryKey)}</span>{/* Use translated category */}
       </div>
-      <h3 className="text-xl font-light text-white mb-4">{item.name}</h3>
-      <p className="text-slate-300 leading-relaxed font-light text-sm">{item.description}</p>
+      <h3 className="text-xl font-light text-white mb-4">{t(item.nameKey)}</h3>{/* Use translated name */}
+      <p className="text-slate-300 leading-relaxed font-light text-sm">{t(item.descriptionKey)}</p>{/* Use translated description */}
     </div>
   </div>
 );
+}
 
 const Ingredients: React.FC<IngredientsProps> = ({ scrollY }) => {
+  const { t } = useTranslation(); // Use the hook in the main component
   return (
     <section id="ingredientes" className="relative py-24 sm:py-32 overflow-hidden bg-slate-900 text-white px-4">
       <IngredientsIllustration scrollY={scrollY} />
@@ -55,13 +60,13 @@ const Ingredients: React.FC<IngredientsProps> = ({ scrollY }) => {
       <div className="relative z-10 max-w-6xl mx-auto">
         <div className="text-center mb-16 sm:mb-20">
           <h2 className="text-4xl sm:text-6xl font-extralight mb-6 tracking-tighter leading-tight">
-            Exceptional
+            {t('ingredients.title_part1')}{/* Use translated title part 1 */}
             <span className="block bg-gradient-to-r from-emerald-400 to-green-500 bg-clip-text text-transparent">
-              Ingredients
+              {t('ingredients.title_part2')}{/* Use translated title part 2 */}
             </span>
           </h2>
           <p className="text-lg text-slate-300 max-w-3xl mx-auto leading-relaxed font-light">
-            We select the purest and rarest ingredients from around the world to create unparalleled luxury fragrances.
+            {t('ingredients.description')}{/* Use translated description */}
           </p>
         </div>
 

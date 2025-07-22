@@ -1,0 +1,106 @@
+{
+  "hero": {
+    "badge": "El Futuro de la Perfumería",
+    "title": {
+      "part1": "Tu Esencia,",
+      "part2": "Decodificada por IA"
+    },
+    "description": "Donde la inteligencia artificial se encuentra con la perfumería artesanal para crear tu fragancia personal única.",
+    "button_discover": "Descubre Tu Aroma",
+    "button_how_it_works": "Mira Cómo Funciona",
+    "aria_label_scroll_down": "Desplazarse hacia abajo"
+  },
+  "cta": {
+    "title_part1": "Tu Fragancia Única",
+    "title_part2": "Te Espera",
+    "description": "Únete a la revolución olfativa donde la IA y la maestría artesanal crean la fragancia perfecta para ti.",
+    "button_create": "Crea Mi Fragancia Ahora",
+    "satisfaction_guarantee": "100% Garantía de Satisfacción"
+  },
+  "testimonials": {
+    "testimonial1": {
+      "name": "Mario",
+      "title": "Emprendedor."
+    },
+    "testimonial2": {
+      "name": "Andrea",
+      "title": "Directora creativa."
+    },
+    "testimonial3": {
+      "name": "Sandra",
+      "title": "Copywriter."
+    },
+    "title_part1": "Experiencias",
+    "title_part2": "Transformadoras",
+    "description": "Descubre cómo fraganz.ai ha revolucionado la experiencia olfativa para nuestros clientes más exigentes.",
+    "quotes": {
+      "quote1": "Nunca pensé que una fragancia pudiera capturar tan perfectamente mi personalidad. Es como si leyeran mi alma.",
+      "quote2": "La combinación de tecnología y artesanía es extraordinaria. Mi fragancia es única y sofisticada.",
+      "quote3": "Cada vez que uso mi fragancia de fraganz.ai, recibo cumplidos. Es verdaderamente excepcional."
+    }
+  },
+  "ingredients": {
+    "title_part1": "Ingredientes",
+    "title_part2": "Excepcionales",
+    "description": "Seleccionamos los ingredientes más puros y raros de todo el mundo para crear fragancias de lujo inigualables.",
+    "notes": {
+      "top": "Notas de Salida",
+      "heart": "Notas de Corazón",
+      "base": "Notas de Fondo"
+    },
+    "items": {
+      "item1": {
+        "name": "Apertura Radiante",
+        "description": "Bergamota Siciliana, Limón de Amalfi y Pétalos de Rosa Búlgara para una apertura brillante y memorable."
+      },
+      "item2": {
+        "name": "Corazón Aromático",
+        "description": "Jazmín de Grasse, Lirio de Florencia y especias raras que definen el carácter único de tu fragancia."
+      },
+      "item3": {
+        "name": "Base Profunda",
+        "description": "Oud Camboyano, Sándalo Místico y Ámbar Gris para una estela inolvidable y duradera."
+      }
+    }
+  },
+  "process": {
+    "title_part1": "El Arte de la",
+    "title_part2": "Perfumera Inteligente",
+    "description": "Fusionamos siglos de maestría artesanal con algoritmos de vanguardia para crear fragancias que capturan tu esencia única.",
+    "steps": {
+      "step1": {
+        "title": "Análisis de Personalidad",
+        "description": "Nuestra IA analiza tus preferencias, recuerdos y personalidad para identificar tu perfil aromático único."
+      },
+      "step2": {
+        "title": "Formulación Artesanal",
+        "description": "Maestros perfumistas interpretan los datos de la IA para crear fórmulas exclusivas con ingredientes premium."
+      },
+    "step3": {
+        "title": "Creación Personalizada",
+        "description": "Cada fragancia es única, elaborada específicamente para ti y tu historia personal."
+      }
+    }
+  },
+  "metadata": {
+    "app_description": "Una elegante aplicación web que utiliza IA para crear perfiles de perfume únicos y personalizados basados en las descripciones del usuario. Muestra la fusión de tecnología y perfumería artesanal."
+  },
+  "footer": {
+    "description": "Revolucionando la perfumería con inteligencia artificial y artesanía tradicional para crear fragancias únicas y personalizadas.",
+    "services_title": "Servicios",
+    "services": {
+      "personalized": "Fragancias Personalizadas",
+      "consulting": "Consultoría Olfativa",
+      "workshops": "Talleres de Perfumería",
+      "corporate": "Fragancias Corporativas"
+    },
+    "contact_title": "Contacto",
+    "contact": {
+      "email": "hello@fraganz.ai",
+      "phone": "+1 (555) 123-4567",
+      "barcelona": "Barcelona, España",
+      "paris": "París, Francia"
+    },
+    "copyright": "Todos los derechos reservados. Creando fragancias únicas con inteligencia artificial."
+  }
+}
