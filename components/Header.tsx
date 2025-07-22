@@ -63,7 +63,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode, scrollToSecti
           <div className="w-10 h-10 bg-gradient-to-br from-slate-700 to-slate-900 dark:from-slate-200 dark:to-slate-400 rounded-full flex items-center justify-center shadow-md">
             <Sparkles className="h-5 w-5 text-white dark:text-slate-900" />
           </div>
-          <span className="text-xl font-light text-slate-800 dark:text-slate-200 tracking-wide">
+          <span className="text-xl font-sansation font-light text-slate-800 dark:text-slate-200 tracking-wide">
             <span className="opacity-75">FRAGANZ</span>
             <span className="text-lg font-bold">.AI</span>
           </span>
@@ -74,7 +74,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode, scrollToSecti
             <button
               key={link.id}
               onClick={() => scrollToSection(link.id)}
-              className="px-4 py-2 rounded-full text-sm font-light text-slate-600 dark:text-slate-400 hover:bg-white dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-slate-100 transition-colors"
+              className="px-4 py-2 rounded-full text-sm font-sansation font-light text-slate-600 dark:text-slate-400 hover:bg-white dark:hover:bg-slate-700 hover:text-slate-900 dark:hover:text-slate-100 transition-colors"
             >
               {link.label}
             </button>
