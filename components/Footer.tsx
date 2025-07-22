@@ -33,9 +33,9 @@ const Footer: React.FC = () => {
               <div className="w-10 h-10 bg-gradient-to-br from-slate-700 to-slate-900 dark:from-slate-200 dark:to-slate-400 rounded-xl flex items-center justify-center shadow-md">
                 <Sparkles className="h-5 w-5 text-white dark:text-slate-900" />
               </div>
-              <span className="text-2xl font-light text-slate-900 dark:text-slate-100">fraganz.ai</span>{/* Logo text might not be translated */}
+              <span className="text-2xl font-sansation text-slate-900 dark:text-slate-100">fraganz.ai</span>{/* Logo text might not be translated */}
             </div>
-            <p className="text-slate-600 dark:text-slate-400 mb-8 max-w-md leading-relaxed font-light">
+            <p className="text-slate-600 dark:text-slate-400 mb-8 max-w-md leading-relaxed font-sansation">
               {t('footer.description')}{/* Use translated description */}
             </p>
             <div className="flex space-x-3">
@@ -48,25 +48,25 @@ const Footer: React.FC = () => {
           </div>
 
           <div>
-            <h3 className="text-lg font-medium text-slate-900 dark:text-slate-100 mb-6">{t('footer.services_title')}</h3>{/* Use translated services title */}
+            <h3 className="text-lg font-sansation text-slate-900 dark:text-slate-100 mb-6">{t('footer.services_title')}</h3>{/* Use translated services title */}
             <ul className="space-y-3">
               {serviceLinks.map(link => (
                 <li key={link.key}>
-                  <a href={link.href} className="text-slate-600 dark:text-slate-400 font-light hover:text-slate-900 dark:hover:text-slate-100 transition-colors">{t(link.key)}</a>{/* Use translated service link text */}
+                  <a href={link.href} className="text-slate-600 dark:text-slate-400 font-sansation hover:text-slate-900 dark:hover:text-slate-100 transition-colors">{t(link.key)}</a>{/* Use translated service link text */}
                 </li>
               ))}
             </ul>
           </div>
 
           <div>
-            <h3 className="text-lg font-medium text-slate-900 dark:text-slate-100 mb-6">{t('footer.contact_title')}</h3>{/* Use translated contact title */}
-            <ul className="space-y-3 text-slate-600 dark:text-slate-400 font-light">
+            <h3 className="text-lg font-sansation text-slate-900 dark:text-slate-100 mb-6">{t('footer.contact_title')}</h3>{/* Use translated contact title */}
+            <ul className="space-y-3 text-slate-600 dark:text-slate-400 font-sansation">
               {contactInfo.map(info => <li key={info.key}>{t(info.key)}</li>)}{/* Use translated contact info */}
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-slate-200/50 dark:border-slate-700/50 mt-12 pt-8 text-center text-slate-600 dark:text-slate-400 font-light text-sm">
+        <div className="border-t border-slate-200/50 dark:border-slate-700/50 mt-12 pt-8 text-center text-slate-600 dark:text-slate-400 font-sansation text-sm">
           <p>&copy; {new Date().getFullYear()} fraganz.ai. {t('footer.copyright')}</p>{/* Use translated copyright text */}
         </div>
       </div>

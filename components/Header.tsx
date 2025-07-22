@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect, useRef } from 'react';
-import { Sparkles, Sun, Moon, Globe } from 'lucide-react'; // Import Globe icon
+import { Sparkles, Sun, Moon, Globe } from 'lucide-react';
 import Button from './ui/Button';
 import { useTranslation } from 'react-i18next';
 
@@ -15,7 +15,7 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode, scrollToSecti
   const [isScrolled, setIsScrolled] = useState(false);
   const [isLanguageDropdownOpen, setIsLanguageDropdownOpen] = useState(false);
 
-  const languageDropdownRef = useRef<HTMLDivElement>(null); // Ref for the dropdown container
+  const languageDropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,7 +25,6 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode, scrollToSecti
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Close dropdown when clicking outside
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
       if (languageDropdownRef.current && !languageDropdownRef.current.contains(event.target as Node)) {
@@ -65,7 +64,8 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode, scrollToSecti
             <Sparkles className="h-5 w-5 text-white dark:text-slate-900" />
           </div>
           <span className="text-xl font-light text-slate-800 dark:text-slate-200 tracking-wide">
-            fraganz.ai
+            <span className="opacity-75">FRAGANZ</span>
+            <span className="text-lg font-bold">.AI</span>
           </span>
         </div>
 
@@ -82,7 +82,6 @@ const Header: React.FC<HeaderProps> = ({ darkMode, toggleDarkMode, scrollToSecti
         </nav>
 
         <div className="flex items-center space-x-2">
-          {/* Language Selector */}
           <div className="relative" ref={languageDropdownRef}>
             <button
               onClick={toggleLanguageDropdown}
